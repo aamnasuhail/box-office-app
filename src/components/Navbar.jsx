@@ -11,10 +11,8 @@ const Navbar = () => {
     <nav>
       <ul>
         {LINKS.map((item) => (
-          <li>
-            <Link key={item.to} to={item.to}>
-              {item.text}
-            </Link>
+          <li key={item.to}>
+            <Link to={item.to}>{item.text}</Link>
           </li>
         ))}
       </ul>
